@@ -6,7 +6,6 @@ import com.game.loot.service.GameService;
 import com.game.loot.service.RoomService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -24,9 +23,6 @@ public class GameController {
 
     @Autowired
     RoomService roomService;
-
-    @Autowired
-    private SimpMessagingTemplate template;
 
     @PostMapping("/populate")
     public ResponseEntity<String> populateCards() {

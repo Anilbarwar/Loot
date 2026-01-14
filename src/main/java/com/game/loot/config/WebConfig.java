@@ -14,7 +14,8 @@ public class WebConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("http://192.168.1.6:3000", "http://localhost:3000", "https://lootft.loca.lt", "https://loot-production.up.railway.app/", "https://loot-frontend-one.vercel.app")
+                        .allowedOrigins("http://192.168.1.6:3000", "http://localhost:3000", "https://lootft.loca.lt",
+                                "https://rationally-immune-snapper.ngrok-free.app")
                         .allowedMethods("*")
                         .allowedHeaders("*")
                         .allowCredentials(true);

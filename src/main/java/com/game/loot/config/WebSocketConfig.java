@@ -19,8 +19,9 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry.addEndpoint("/ws")
-                .setAllowedOrigins("http://192.168.1.6:3000", "http://localhost:3000", "https://lootft.loca.lt", "https://loot-production.up.railway.app/", "https://loot-frontend-one.vercel.app")
-                .setAllowedOriginPatterns("*")
+                .setAllowedOrigins("http://192.168.1.6:3000", "http://localhost:3000", "https://lootft.loca.lt",
+                        "https://rationally-immune-snapper.ngrok-free.app")
+                .setAllowedOriginPatterns("**")
                 .withSockJS()
                 .setSessionCookieNeeded(true);
     }
